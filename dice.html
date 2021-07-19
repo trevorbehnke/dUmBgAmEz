@@ -14,7 +14,7 @@
           <h4>Dumb Gamez</h4>
         </div>
         <ul class="nav-links">
-          <li><a href="dice.html">Dice Roll</a></li>
+          <li><a href="dice.html" class="current">Dice Roll</a></li>
           <li><a href="magic8ball.html">Magic 8 Ball</a></li>
           <li><a href="#">Idiot</a></li>
           <li><a href="#">Cypher</a></li>
@@ -33,16 +33,18 @@
     </div>
     <div class="container">
       <form id="form" class="form" onsubmit="return false">
-        <h2>Dice Roller</h2>
+        <h2>Dice</h2>
         <div class="form-control">
+          <label for="sides">How many sides?</label>
           <input type="number" id="sides" placeholder="How many sides?" />
         </div>
         <div class="form-control">
+          <label for="quantity">How many dice?</label>
           <input type="number" id="quantity" placeholder="How many dice?" />
         </div>
         <button id="roll">Roll</button>
         <div class="form-control" id="dice-container">
-          <p id="results"></p>
+          <h2 id="results"></h2>
           <img src="./dice/dice.png" alt="dice" id="dice-pic" />
         </div>
       </form>

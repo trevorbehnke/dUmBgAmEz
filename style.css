@@ -1,6 +1,32 @@
 /* @import url(./magic8/magic8.css); */
 /* @import url(./dice/dice.css); */
 
+:root {
+  --light-10: #ffffff;
+  --light-9: #ebeef3;
+  --light-8: #d6dde8;
+  --light-7: #c2ccdc;
+  --light-6: #aebbd1;
+  --light-5: #9aabc5;
+  --light-4: #859ab9;
+  --light-3: #7189ae;
+  --light-2: #5d78a2;
+  --light-1: #486797;
+
+  --center: #34568b;
+
+  --dark-1: #2f4d7d;
+  --dark-2: #2a456f;
+  --dark-3: #243c61;
+  --dark-4: #1f3453;
+  --dark-5: #1a2b46;
+  --dark-6: #152238;
+  --dark-7: #101a2a;
+  --dark-8: #0a111c;
+  --dark-9: #05090e;
+  --dark-10: #000000;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,7 +40,7 @@ html {
 }
 
 body {
-  background: seashell;
+  background: var(--light-9);
   font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
@@ -32,9 +58,10 @@ body {
 }
 
 .container {
-  background-color: #fff;
+  background-color: var(--light-7);
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(52, 86, 139, 0.3);
   height: 600px;
   width: 400px;
   justify-content: center;
@@ -47,9 +74,14 @@ body {
   z-index: 1000;
 }
 
-h2 {
+h1,
+h2,
+h3,
+h5,
+h6 {
   text-align: center;
   margin: 0 0 20px;
+  color: var(--dark-5);
 }
 
 .form {
@@ -63,13 +95,13 @@ h2 {
 }
 
 .form-control label {
-  color: #777;
+  color: var(--dark-3);
   display: inline-block;
   margin-bottom: 5px;
 }
 
 .form-control input {
-  border: 2px solid #f0f0f0;
+  border: 2px solid var(--dark-3);
   border-radius: 4px;
   display: block;
   width: 100%;
@@ -79,10 +111,10 @@ h2 {
 
 .form-control input:focus {
   outline: 0;
-  border-color: #777;
+  border-color: var(--light-3);
 }
 
-.form-control.success input {
+/* .form-control.success input {
   border-color: var(--success-color);
 }
 
@@ -100,14 +132,14 @@ h2 {
 
 .form-control.error small {
   visibility: visible;
-}
+} */
 
 .form button {
   cursor: pointer;
-  background-color: #3498db;
-  border: 2px solid #3498db;
+  background-color: var(--center);
+  border: 2px solid var(--center);
   border-radius: 4px;
-  color: #fff;
+  color: var(--light-10);
   display: block;
   font-size: 16px;
   padding: 10px;
@@ -116,9 +148,9 @@ h2 {
 }
 
 .form button:hover {
-  background: aliceblue;
-  border: 2px solid aliceblue;
-  color: #333;
+  background: var(--light-2);
+  border: 2px solid var(--dark-8);
+  /* color: var(--dark-8); */
 }
 
 nav {
@@ -126,13 +158,15 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: aliceblue;
+  background-color: var(--center);
 }
 
 .logo {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
+  color: var(--light-9);
+  /* color: var(--light-3); */
 }
 
 .nav-links {
@@ -143,9 +177,9 @@ nav {
   right: 0px;
   height: 92vh;
   top: 8vh;
-  background-color: aliceblue;
+  background-color: var(--center);
   flex-direction: column;
-  opacity: 0.95;
+  /* opacity: 0.95; */
   align-items: center;
   transform: translateX(100%);
   transition: transform 0.3s ease-in;
@@ -160,7 +194,7 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: var(--light-9);
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 14px;
@@ -175,12 +209,12 @@ nav {
   width: 25px;
   height: 3px;
   margin: 5px;
-  background-color: #333;
+  background-color: var(--light-9);
   transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
-  border-bottom: #333 1px solid;
+  border-bottom: var(--light-9) 1px solid;
 }
 
 .nav-active {
@@ -228,7 +262,7 @@ nav {
 
 #results {
   position: relative;
-  font-size: 2rem;
+  /* font-size: 2rem; */
   text-align: center;
   margin-top: 30px;
   margin-bottom: 20px;
