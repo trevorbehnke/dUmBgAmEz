@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="wrapper">
-      <nav>
+      <nav class="sticky">
         <div class="logo">
           <h4>Dumb Gamez</h4>
         </div>
@@ -32,25 +32,21 @@
       </nav>
     </div>
     <div class="container">
-      <div class="form-wrap">
-        <h1>Magic 8 Ball</h1>
-        <form>
-          <div class="form-group">
-            <input
-              type="text"
-              id="question"
-              placeholder="Ask a Yes or No Question..."
-            />
-            <input id="shake" type='submit' class="btn" value="Shake!"></input>
-            <div id="ball-wrap">
-              <img id="ball" src="./magic8/8-Ball.png" alt="m8ball" />
-              <div>
-                <p id="answer"></p>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
+      <form id="form" class="form" onsubmit="return false">
+        <h2>Magic 8 Ball</h2>
+        <div class="form-control">
+          <input
+            type="text"
+            id="question"
+            placeholder="Ask a Yes or No Question..."
+          />
+        </div>
+        <button id="shake">Shake!</button>
+        <div class="form-control">
+          <p id="answer"></p>
+        </div>
+        <img id="ball" src="./magic8/8-Ball.png" alt="m8ball" />
+      </form>
     </div>
     <script src="./app.js"></script>
     <script src="./magic8/magic8.js"></script>
