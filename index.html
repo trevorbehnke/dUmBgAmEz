@@ -4,32 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Loop&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Welcome to Dumb Gamez</title>
   </head>
-  <body>
-    <div id="wrapper">
-      <nav class="sticky">
-        <div class="logo">
-          <h4>Dumb Gamez</h4>
+  <body id="body-home">
+    <nav class="sticky">
+      <div id="logo-container">
+        <div id="2">
+          <div class="logo">
+            <h1>dumb gam</h1>
+          </div>
         </div>
-        <ul class="nav-links">
-          <li><a href="dice.html">Dice Roll</a></li>
-          <li><a href="magic8ball.html">Magic 8 Ball</a></li>
-          <li><a href="#">Idiot</a></li>
-          <li><a href="#">Cypher</a></li>
-          <li><a href="#">Coin Toss</a></li>
-          <li><a href="#">Fibonaccci</a></li>
-          <li><a href="#">Placeholder 1</a></li>
-          <li><a href="#">Placeholder 2</a></li>
-          <li><a href="#">Placeholder 3</a></li>
-        </ul>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+        <div id="3">
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
         </div>
-      </nav>
+        <div id="4">
+          <div class="logo">
+            <h1>z</h1>
+          </div>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="dice.html">Dice Roll</a></li>
+        <li><a href="magic8ball.html">Magic 8 Ball</a></li>
+        <li><a href="#">Idiot</a></li>
+        <li><a href="#">Cypher</a></li>
+        <li><a href="#">Coin Toss</a></li>
+        <li><a href="#">Fibonaccci</a></li>
+        <li><a href="#">Placeholder 1</a></li>
+        <li><a href="#">Placeholder 2</a></li>
+        <li><a href="#">Placeholder 3</a></li>
+        <li><a href="dice.html">Dice Roll</a></li>
+        <li><a href="magic8ball.html">Magic 8 Ball</a></li>
+        <li><a href="#">Idiot</a></li>
+        <li><a href="#">Cypher</a></li>
+        <li><a href="#">Coin Toss</a></li>
+        <li><a href="#">Fibonaccci</a></li>
+        <li><a href="#">Placeholder 1</a></li>
+        <li><a href="#">Placeholder 2</a></li>
+        <li><a href="#">Placeholder 3</a></li>
+      </ul>
+    </nav>
+    <div class="footer">
+      <div>
+        <h3>
+          Made By
+          <a id="tb-website" href="https://trevorbehnke.com/" target="_blank"
+            >Trevor Behnke</a
+          >
+        </h3>
+      </div>
+      <div>
+        <a href="https://github.com/trevorbehnke" target="_blank"
+          ><img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMGMtNi42MjYgMC0xMiA1LjM3My0xMiAxMiAwIDUuMzAyIDMuNDM4IDkuOCA4LjIwNyAxMS4zODcuNTk5LjExMS43OTMtLjI2MS43OTMtLjU3N3YtMi4yMzRjLTMuMzM4LjcyNi00LjAzMy0xLjQxNi00LjAzMy0xLjQxNi0uNTQ2LTEuMzg3LTEuMzMzLTEuNzU2LTEuMzMzLTEuNzU2LTEuMDg5LS43NDUuMDgzLS43MjkuMDgzLS43MjkgMS4yMDUuMDg0IDEuODM5IDEuMjM3IDEuODM5IDEuMjM3IDEuMDcgMS44MzQgMi44MDcgMS4zMDQgMy40OTIuOTk3LjEwNy0uNzc1LjQxOC0xLjMwNS43NjItMS42MDQtMi42NjUtLjMwNS01LjQ2Ny0xLjMzNC01LjQ2Ny01LjkzMSAwLTEuMzExLjQ2OS0yLjM4MSAxLjIzNi0zLjIyMS0uMTI0LS4zMDMtLjUzNS0xLjUyNC4xMTctMy4xNzYgMCAwIDEuMDA4LS4zMjIgMy4zMDEgMS4yMy45NTctLjI2NiAxLjk4My0uMzk5IDMuMDAzLS40MDQgMS4wMi4wMDUgMi4wNDcuMTM4IDMuMDA2LjQwNCAyLjI5MS0xLjU1MiAzLjI5Ny0xLjIzIDMuMjk3LTEuMjMuNjUzIDEuNjUzLjI0MiAyLjg3NC4xMTggMy4xNzYuNzcuODQgMS4yMzUgMS45MTEgMS4yMzUgMy4yMjEgMCA0LjYwOS0yLjgwNyA1LjYyNC01LjQ3OSA1LjkyMS40My4zNzIuODIzIDEuMTAyLjgyMyAyLjIyMnYzLjI5M2MwIC4zMTkuMTkyLjY5NC44MDEuNTc2IDQuNzY1LTEuNTg5IDguMTk5LTYuMDg2IDguMTk5LTExLjM4NiAwLTYuNjI3LTUuMzczLTEyLTEyLTEyeiIvPjwvc3ZnPg=="
+        /></a>
+      </div>
+      <div>
+        <h3>&copy; 2021 All Rights Reserved</h3>
+      </div>
     </div>
     <script src="./app.js"></script>
   </body>
